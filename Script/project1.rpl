@@ -1,0 +1,110 @@
+ic_load_tetin C:/Users/Ruibin/Desktop/PreGeneration0807/Mutil_Countline_Together_Deformation/threeStlParts/project1.tin
+ic_boco_solver 
+ic_boco_clear_icons 
+ic_csystem_display all 0
+ic_csystem_set_current global
+ic_boco_nastran_csystem reset
+ic_geo_set_modified 0
+ic_csystem_display all 0
+ic_csystem_set_current global
+ic_boco_nastran_csystem reset
+ic_file_is_ascii C:/Users/Ruibin/Desktop/PreGeneration0807/Mutil_Countline_Together_Deformation/threeStlParts/trainHead.stl
+ic_run_application_exec . icemcfd/output-interfaces stl2df {"C:/Users/Ruibin/Desktop/PreGeneration0807/Mutil_Countline_Together_Deformation/threeStlParts/trainHead.stl" "./tmpdomain0.uns"  -fam TRAINHEAD}
+ic_file_is_ascii C:/Users/Ruibin/Desktop/PreGeneration0807/Mutil_Countline_Together_Deformation/threeStlParts/trainMiddle.stl
+ic_run_application_exec . icemcfd/output-interfaces stl2df {"C:/Users/Ruibin/Desktop/PreGeneration0807/Mutil_Countline_Together_Deformation/threeStlParts/trainMiddle.stl" "./tmpdomain1.uns"  -fam TRAINMIDDLE}
+ic_file_is_ascii C:/Users/Ruibin/Desktop/PreGeneration0807/Mutil_Countline_Together_Deformation/threeStlParts/trainTail.stl
+ic_run_application_exec . icemcfd/output-interfaces stl2df {"C:/Users/Ruibin/Desktop/PreGeneration0807/Mutil_Countline_Together_Deformation/threeStlParts/trainTail.stl" "./tmpdomain2.uns"  -fam TRAINTAIL}
+ic_geo_import_mesh ./tmpdomain0.uns 1 1
+ic_boco_solver 
+ic_boco_clear_icons 
+ic_csystem_display all 0
+ic_csystem_set_current global
+ic_boco_nastran_csystem reset
+ic_geo_import_mesh ./tmpdomain1.uns 1 1
+ic_boco_solver 
+ic_boco_clear_icons 
+ic_csystem_display all 0
+ic_csystem_set_current global
+ic_boco_nastran_csystem reset
+ic_geo_import_mesh ./tmpdomain2.uns 1 1
+ic_boco_solver 
+ic_boco_clear_icons 
+ic_csystem_display all 0
+ic_csystem_set_current global
+ic_boco_nastran_csystem reset
+ic_chdir C:/Users/Ruibin/Desktop/PreGeneration0807/IcemGenerateMesh
+ic_set_global geo_cad 0.1 toler
+ic_undo_group_begin 
+ic_set_meshing_params global 0 gref 1.0 gmax 0.0 gfast 0 gedgec 0.2 gnat 0 gcgap 1 gnatref 10
+ic_undo_group_end 
+ic_undo_group_begin 
+ic_set_meshing_params surface_global 0 mesh_type 3 mesh_method 1 simple_offset 0 bunch_respect 0 protect_line 0 bound_smooth 0 block_mapping 0.2 adjust_nodes_max 0.0 proj_surf 1 surf_sizes 0 ign_size 0.1 try_harder 1 impr_level 1 mesh_dormant 0 smooth_dormant 0 max_area 0.0 max_length 0.0 min_angle 0.0 max_nodes 0 max_elements 0 merge_surfs 1 mapped_method 1 free_bunch 0 shrinkwrap_nsmooth 5 shrinkwrap_projfactor 0.1 snorm 1 quadratic 0
+ic_undo_group_end 
+ic_undo_group_begin 
+ic_set_meshing_params global 0 gfast 0 gedgec 0.2
+ic_undo_group_end 
+ic_undo_group_begin 
+ic_set_meshing_params prism 0 law exponential layers 3 height 0.001 ratio 1.2 total_height 0.0164991 prism_height_limit 0 max_prism_height_ratio {} stair_step 1 auto_reduction 0 min_prism_quality 0.0099999998 max_prism_angle 180 fillet 0.1 tetra_smooth_limit 0.30000001 n_tetra_smoothing_steps 10 n_triangle_smoothing_steps 5
+ic_set_meshing_params variable 0 tgrid_n_ortho_layers 0 tgrid_fix_first_layer 0 tgrid_gap_factor 0.5 tgrid_enhance_norm_comp 0 tgrid_enhance_offset_comp 0 tgrid_smoothing_level 1 tgrid_max_cap_skew 0.98 tgrid_max_cell_skew 0.90 tgrid_last_layer_aspect {} triangle_quality inscribed_area
+ic_undo_group_end 
+ic_undo_group_begin 
+ic_coords_dir_into_global {0 0 0} global
+ic_geo_set_periodic_data {axis {0 0 0} type none angle 0 base {0 0 0}}
+ic_undo_group_end 
+ic_undo_group_begin 
+ic_geo_set_family_params GROUND no_crv_inf prism 0 emax 5.0 ehgt 0 hrat 0 nlay 0 erat 0 ewid 0 emin 0.0 edev 0.0 prism_height_limit 0 law -1 split_wall 0 internal_wall 0
+ic_geo_set_family_params INLET no_crv_inf prism 0 emax 5.0 ehgt 0 hrat 0 nlay 0 erat 0 ewid 0 emin 0.0 edev 0.0 prism_height_limit 0 law -1 split_wall 0 internal_wall 0
+ic_geo_set_family_params OUTLET no_crv_inf prism 0 emax 5.0 ehgt 0 hrat 0 nlay 0 erat 0 ewid 0 emin 0.0 edev 0.0 prism_height_limit 0 law -1 split_wall 0 internal_wall 0
+ic_geo_set_family_params TRAINHEAD no_crv_inf prism 1 emax 0.06 ehgt 0 hrat 0 nlay 0 erat 0 ewid 0 emin 0.0 edev 0.0 prism_height_limit 0 law -1 split_wall 0 internal_wall 0
+ic_geo_set_family_params TRAINMIDDLE no_crv_inf prism 1 emax 0.5 ehgt 0 hrat 0 nlay 0 erat 0 ewid 0 emin 0.0 edev 0.0 prism_height_limit 0 law -1 split_wall 0 internal_wall 0
+ic_geo_set_family_params TRAINTAIL no_crv_inf prism 1 emax 0.06 ehgt 0 hrat 0 nlay 0 erat 0 ewid 0 emin 0.0 edev 0.0 prism_height_limit 0 law -1 split_wall 0 internal_wall 0
+ic_geo_set_family_params WALL no_crv_inf prism 0 emax 5.0 ehgt 0 hrat 0 nlay 0 erat 0 ewid 0 emin 0.0 edev 0.0 prism_height_limit 0 law -1 split_wall 0 internal_wall 0
+ic_undo_group_end 
+ic_geo_params_blank_done part 1
+ic_set_global geo_cad 0.1 toler
+ic_undo_group_begin 
+ic_run_tetra C:/Users/Ruibin/Desktop/PreGeneration0807/Mutil_Countline_Together_Deformation/threeStlParts/project1.tin C:/Users/Ruibin/Desktop/PreGeneration0807/IcemGenerateMesh/tetra_mesh.uns run_cutter 1 delete_auto 1 run_smoother 0 fix_holes 1 n_processors 1 in_process 1 auto_vol 1 log ./tetra_cmd.log
+ic_geo_set_modified 1
+ic_uns_update_family_type visible {TRAINTAIL TRAINHEAD INLET WALL TRAINMIDDLE OUTLET ORFN GROUND GEO} {!NODE !LINE_2 TRI_3 !TETRA_4} update 0
+ic_boco_solver 
+ic_uns_update_family_type visible {TRAINTAIL TRAINHEAD INLET WALL TRAINMIDDLE OUTLET ORFN CREATED_MATERIAL_9 CREATED_MATERIAL_10 GROUND GEO} {!NODE !LINE_2 TRI_3 !TETRA_4} update 0
+ic_boco_clear_icons 
+ic_csystem_display all 0
+ic_csystem_set_current global
+ic_boco_nastran_csystem reset
+ic_uns_subset_visible {added faces} 1
+ic_uns_diagnostic diag_type single quiet 1
+ic_smooth_elements map all upto 0.4 iterations 5 fix_families {} n_processors 1 smooth TRI_3 float TETRA_4 laplace 1
+ic_smooth_elements map all upto 0.4 iterations 5 prism_warp_weight 0.5 fix_families {} n_processors 1 smooth TETRA_4 float PENTA_6 freeze TRI_3
+ic_smooth_elements map all upto 0.4 iterations 5 prism_warp_weight 0.5 fix_families {} metric Quality n_processors 1 smooth TETRA_4 smooth TRI_3 float PENTA_6
+ic_geo_set_modified 1
+ic_uns_update_family_type visible {TRAINTAIL TRAINHEAD INLET WALL TRAINMIDDLE OUTLET ORFN CREATED_MATERIAL_9 CREATED_MATERIAL_10 GROUND GEO} {!NODE !LINE_2 TRI_3 !TETRA_4} update 0
+ic_uns_update_family_type visible {TRAINTAIL TRAINHEAD INLET WALL TRAINMIDDLE OUTLET ORFN CREATED_MATERIAL_9 CREATED_MATERIAL_10 GROUND GEO} {!NODE !LINE_2 TRI_3 !TETRA_4} update 0
+ic_delete_empty_parts 
+ic_undo_group_end 
+ic_undo_group_begin 
+ic_boco_solver {ANSYS Fluent}
+ic_solver_mesh_info {ANSYS Fluent}
+ic_undo_group_end 
+ic_boco_solver 
+ic_boco_solver {ANSYS Fluent}
+ic_solution_set_solver {ANSYS Fluent} 1
+ic_boco_save C:/Users/Ruibin/Desktop/PreGeneration0807/IcemGenerateMesh/ansys.fbc
+ic_boco_save_atr C:/Users/Ruibin/Desktop/PreGeneration0807/IcemGenerateMesh/ansys.atr
+ic_delete_empty_parts 
+ic_delete_empty_parts 
+ic_save_tetin project1.tin 0 0 {} {} 0 0 1
+ic_uns_check_duplicate_numbers 
+ic_uns_renumber_all_elements 1 1
+ic_save_unstruct project1.uns 1 {} {} {}
+ic_uns_set_modified 1
+ic_cart_is_loaded 
+ic_save_project_file C:/Users/Ruibin/Desktop/PreGeneration0807/IcemGenerateMesh/project1.prj {array\ set\ file_name\ \{ {    catia_dir .} {    parts_dir .} {    domain_loaded 0} {    cart_file_loaded 0} {    cart_file {}} {    domain_saved project1.uns} {    archive {}} {    med_replay {}} {    topology_dir .} {    ugparts_dir .} {    icons {{$env(ICEM_ACN)/lib/ai_env/icons} {$env(ICEM_ACN)/lib/va/EZCAD/icons} {$env(ICEM_ACN)/lib/icons} {$env(ICEM_ACN)/lib/va/CABIN/icons}}} {    tetin project1.tin} {    family_boco ansys.fbc} {    prism_params C:/Users/Ruibin/Desktop/PreGeneration0807/Mutil_Countline_Together_Deformation/threeStlParts/project1.prism_params} {    iges_dir .} {    solver_params_loaded 0} {    attributes_loaded 0} {    project_lock {}} {    attributes ansys.atr} {    domain project1.uns} {    domains_dir .} {    settings_loaded 0} {    settings project1.prj} {    blocking {}} {    hexa_replay {}} {    transfer_dir .} {    mesh_dir .} {    family_topo {}} {    gemsparts_dir .} {    family_boco_loaded 0} {    tetin_loaded 1} {    project_dir .} {    topo_mulcad_out {}} {    solver_params {}} \} array\ set\ options\ \{ {    expert 1} {    remote_path {}} {    tree_disp_quad 2} {    tree_disp_pyra 0} {    evaluate_diagnostic 0} {    histo_show_default 1} {    select_toggle_corners 0} {    remove_all 0} {    keep_existing_file_names 0} {    record_journal 0} {    edit_wait 0} {    face_mode all} {    select_mode all} {    med_save_emergency_tetin 1} {    user_name Lenovo} {    diag_which all} {    uns_warn_if_display 500000} {    bubble_delay 1000} {    external_num 1} {    tree_disp_tri 2} {    apply_all 0} {    default_solver {ANSYS Fluent}} {    temporary_directory {}} {    flood_select_angle 0} {    home_after_load 1} {    project_active 0} {    histo_color_by_quality_default 1} {    undo_logging 1} {    tree_disp_hexa 0} {    histo_solid_default 1} {    host_name Xujianxi} {    xhidden_full 1} {    editor {}} {    mouse_color orange} {    clear_undo 1} {    remote_acn {}} {    remote_sh csh} {    tree_disp_penta 0} {    n_processors 1} {    remote_host {}} {    save_to_new 0} {    quality_info Quality} {    tree_disp_node 0} {    med_save_emergency_mesh 1} {    redtext_color red} {    tree_disp_line 0} {    select_edge_mode 0} {    use_dlremote 0} {    max_mesh_map_size {}} {    show_tris 1} {    remote_user {}} {    icon_size Normal} {    enable_idle 0} {    auto_save_views 1} {    max_cad_map_size {}} {    display_origin 0} {    uns_warn_user_if_display 1000000} {    detail_info 0} {    win_java_help 0} {    show_factor 1} {    boundary_mode all} {    clean_up_tmp_files 1} {    auto_fix_uncovered_faces 1} {    med_save_emergency_blocking 1} {    max_binary_tetin 0} {    tree_disp_tetra 0} \} array\ set\ disp_options\ \{ {    uns_dualmesh 0} {    uns_warn_if_display 500000} {    uns_normals_colored 0} {    uns_icons 0} {    uns_locked_elements 0} {    uns_shrink_npos 0} {    uns_node_type None} {    uns_icons_normals_vol 0} {    uns_bcfield 0} {    backup Wire} {    uns_nodes 0} {    uns_only_edges 0} {    uns_surf_bounds 0} {    uns_wide_lines 0} {    uns_vol_bounds 0} {    uns_displ_orient Triad} {    uns_orientation 0} {    uns_directions 0} {    uns_thickness 0} {    uns_shell_diagnostic 0} {    uns_normals 0} {    uns_couplings 0} {    uns_periodicity 0} {    uns_single_surfaces 0} {    uns_midside_nodes 1} {    uns_shrink 100} {    uns_multiple_surfaces 0} {    uns_no_inner 0} {    uns_enums 0} {    uns_disp Wire} {    uns_bcfield_name {}} {    uns_color_by_quality 0} {    uns_changes 0} {    uns_cut_delay_count 1000} \} {set icon_size1 24} {set icon_size2 35} {set thickness_defined 0} {set solver_type 1} {set solver_setup 1} array\ set\ prism_values\ \{ {    n_triangle_smoothing_steps 5} {    min_smoothing_steps 6} {    first_layer_smoothing_steps 1} {    new_volume {}} {    height 0} {    prism_height_limit 0} {    interpolate_heights 0} {    n_tetra_smoothing_steps 10} {    do_checks {}} {    delete_standalone 1} {    ortho_weight 0.50} {    max_aspect_ratio {}} {    ratio_max {}} {    total_height 0} {    use_prism_v10 0} {    intermediate_write 1} {    delete_base_triangles {}} {    ratio_multiplier {}} {    refine_prism_boundary 1} {    max_size_ratio {}} {    triangle_quality inscribed_area} {    max_prism_angle 180} {    tetra_smooth_limit 0.30000001} {    max_jump_factor 5} {    use_existing_quad_layers 0} {    layers 3} {    fillet 0.1} {    into_orphan 0} {    init_dir_from_prev 0} {    blayer_2d 0} {    do_not_allow_sticking {}} {    top_family {}} {    law exponential} {    min_smoothing_val 0.1} {    auto_reduction 0} {    max_prism_height_ratio 0} {    stop_columns 1} {    stair_step 1} {    smoothing_steps 12} {    side_family {}} {    min_prism_quality 0.0099999998} {    ratio 1.2} \} {set aie_current_flavor {}} array\ set\ vid_options\ \{ {    wb_import_tritol 0.001} {    wb_import_mix_res_line 0} {    wb_import_cad_att_pre {SDFEA;DDM}} {    wb_import_surface_bodies 1} {    wb_NS_to_subset 0} {    wb_import_mat_points 0} {    auxiliary 0} {    wb_import_mix_res_surface 0} {    wb_import_mix_res -1} {    wb_import_cad_att_trans 1} {    show_name 0} {    wb_import_delete_solids 0} {    wb_import_solid_bodies 1} {    wb_import_save_pmdb {}} {    wb_import_mix_res_solid 0} {    inherit 1} {    default_part GEOM} {    new_srf_topo 1} {    wb_import_associativity_model_name {}} {    DelPerFlag 0} {    wb_import_save_partfile 0} {    wb_import_line_bodies 0} {    composite_tolerance 1.0} {    wb_import_en_sym_proc 1} {    wb_NS_to_entity_parts 0} {    wb_import_reference_key 0} {    wb_import_work_points 0} {    wb_import_sel_proc 1} {    wb_NS_only 0} {    wb_import_pluginname {}} {    wb_import_mix_res_point 0} {    wb_import_refresh_pmdb 0} {    wb_import_create_solids 0} {    wb_import_load_pmdb {}} {    wb_import_scale_geo 0} {    wb_import_sel_pre {}} {    replace 0} {    wb_import_cad_associativity 0} {    same_pnt_tol 1e-4} {    tdv_axes 1} {    vid_mode 0} {    DelBlkPerFlag 0} \} array\ set\ map_tetin_sizes\ \{ {    densities 1} {    msurfaces 1} {    ppoint 1} {    thincuts 1} {    tetin {}} {    psurfaces 1} {    mcurves 1} {    mpoint 1} {    doit 0} {    pcurves 1} {    global 1} {    subsets 1} {    family 1} \} array\ set\ import_model_options\ \{ {    from_source 0} {    always_ref_key 0} {    always_convert 0} {    named_sel_only 0} {    always_import 0} {    convert_to Unitless} \} {set savedTreeVisibility {geomNode 1 geom_subsetNode 2 geomPointNode 0 geomCurveNode 2 geomSurfNode 0 meshNode 1 mesh_subsetNode 2 mesh_subset-added_faces 2 meshPointNode 0 meshLineNode 0 meshShellNode 2 meshTriNode 2 meshVolumeNode 0 meshTetraNode 0 partNode 2 part-CREATED_MATERIAL_10 2 part-CREATED_MATERIAL_9 2 part-GEO 2 part-GROUND 2 part-INLET 2 part-OUTLET 2 part-TRAINHEAD 2 part-TRAINMIDDLE 2 part-TRAINTAIL 2 part-WALL 2}} {set last_view {rot {-0.0430628283868 -0.0475332401746 -0.000607354220816 0.997940787326} scale {5.14781593654 5.14781593654 5.14781593654} center {-13.3895 24.9622 3.206} pos {0 0 0}}} array\ set\ cut_info\ \{ {    active 0} \} array\ set\ hex_option\ \{ {    default_bunching_ratio 2.0} {    floating_grid 0} {    project_to_topo 0} {    n_tetra_smoothing_steps 20} {    sketching_mode 0} {    trfDeg 1} {    wr_hexa7 0} {    smooth_ogrid 0} {    find_worst 1-3} {    hexa_verbose_mode 0} {    old_eparams 0} {    uns_face_mesh_method uniform_quad} {    multigrid_level 0} {    uns_face_mesh one_tri} {    check_blck 0} {    proj_limit 0} {    check_inv 0} {    project_bspline 0} {    hexa_update_mode 1} {    default_bunching_law BiGeometric} \} array\ set\ saved_views\ \{ {    views {}} \}} {ICEM CFD}
+ic_exec {C:/Program Files/ANSYS Inc/v162/icemcfd/win64_amd/icemcfd/output-interfaces/fluent6} -dom C:/Users/Ruibin/Desktop/PreGeneration0807/IcemGenerateMesh/project1.uns -b C:/Users/Ruibin/Desktop/PreGeneration0807/IcemGenerateMesh/ansys.fbc ./fluent
+ic_uns_num_couplings 
+ic_undo_group_begin 
+ic_uns_create_diagnostic_edgelist 1
+ic_uns_diagnostic subset all diag_type uncovered fix_fam FIX_UNCOVERED diag_verb {Uncovered faces} fams {} busy_off 1 quiet 1
+ic_uns_create_diagnostic_edgelist 0
+ic_undo_group_end 
+exit
