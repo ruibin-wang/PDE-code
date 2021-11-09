@@ -1,0 +1,356 @@
+// tetin file version 1.1
+// written by ICEM CFD - version 16.1 on Tue Apr 24 18:23:02 2018
+// written by ICEM CFD - version 16.1 on Tue Apr 24 21:03:38 2018
+// written by ICEM CFD - version 16.1 on Tue Jun 19 20:58:26 2018
+// written by ICEM CFD - version 16.1 on Fri Jun 22 16:40:38 2018
+// written by ICEM CFD - version 16.1 on Wed Jul 04 20:58:34 2018
+
+set_triangulation_tolerance 0.001
+define_family GEO color 16663866
+define_family OUTLET prism 0 tetra_size 5.0 height 0 hratio 0 nlay 0 ratio 0 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 16663866
+define_family GROUND prism 0 tetra_size 5.0 height 0 hratio 0 nlay 0 ratio 0 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 16663866
+define_family WALL prism 0 tetra_size 5.0 height 0 hratio 0 nlay 0 ratio 0 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 16663866
+define_family INLET prism 0 tetra_size 5.0 height 0 hratio 0 nlay 0 ratio 0 width 0 min 0.0 dev 0.0 prism_height_limit 0 law -1 color 16663866
+
+prescribed_point -149.8599 49.4622 52.206 family GEO name GEOM.7
+prescribed_point -149.8599 0.4622 52.206 family GEO name GEOM.8
+prescribed_point -149.8599 0.4622 -45.794 family GEO name GEOM.9
+prescribed_point -149.8599 49.4622 -45.794 family GEO name GEOM.10
+prescribed_point -149.8599 49.4622 52.206 family GEO name GEOM.23
+prescribed_point -149.8599 0.4622 52.206 family GEO name GEOM.24
+prescribed_point -149.8599 0.4622 -45.794 family GEO name GEOM.25
+prescribed_point -149.8599 49.4622 -45.794 family GEO name GEOM.26
+prescribed_point -149.8599 49.4622 52.206 family GEO name GEOM.39
+prescribed_point -149.8599 0.4622 52.206 family GEO name GEOM.40
+prescribed_point -149.8599 0.4622 -45.794 family GEO name GEOM.41
+prescribed_point -149.8599 49.4622 -45.794 family GEO name GEOM.42
+prescribed_point -149.8599 49.4622 52.206 family GEO name GEOM.51
+prescribed_point -149.8599 0.4622 52.206 family GEO name GEOM.52
+prescribed_point -149.8599 0.4622 -45.794 family GEO name GEOM.53
+prescribed_point -149.8599 49.4622 -45.794 family GEO name GEOM.54
+prescribed_point 123.0811 0.4622 -45.794 family GEO name GEOM.55
+prescribed_point 123.0811 49.4622 -45.794 family GEO name GEOM.56
+prescribed_point -149.8599 49.4622 -45.794 family GEO name GEOM.57
+prescribed_point -149.8599 0.4622 -45.794 family GEO name GEOM.58
+prescribed_point 123.0811 0.4622 -45.794 family GEO name GEOM.67
+prescribed_point 123.0811 0.4622 52.206 family GEO name GEOM.68
+prescribed_point -149.8599 0.4622 52.206 family GEO name GEOM.69
+prescribed_point -149.8599 0.4622 -45.794 family GEO name GEOM.70
+prescribed_point 123.0811 49.4622 52.206 family GEO name GEOM.77
+prescribed_point 123.0811 0.4622 52.206 family GEO name GEOM.78
+prescribed_point 123.0811 0.4622 -45.794 family GEO name GEOM.79
+prescribed_point 123.0811 49.4622 -45.794 family GEO name GEOM.80
+prescribed_point 123.0811 0.4622 52.206 family GEO name GEOM.86
+prescribed_point -149.8599 0.4622 52.206 family GEO name GEOM.87
+prescribed_point -149.8599 49.4622 52.206 family GEO name GEOM.88
+prescribed_point 123.0811 49.4622 52.206 family GEO name GEOM.89
+prescribed_point 123.0811 49.4622 -45.794 family GEO name GEOM.90
+prescribed_point 123.0811 49.4622 52.206 family GEO name GEOM.91
+prescribed_point -149.8599 49.4622 52.206 family GEO name GEOM.92
+prescribed_point -149.8599 49.4622 -45.794 family GEO name GEOM.93
+prescribed_point 123.0811 0.4622 -45.794 family OUTLET name GEOM.94
+prescribed_point 123.0811 0.4622 52.206 family OUTLET name GEOM.95
+prescribed_point 123.0811 49.4622 52.206 family OUTLET name GEOM.96
+prescribed_point 123.0811 49.4622 -45.794 family OUTLET name GEOM.97
+prescribed_point 123.0811 0.4622 -45.794 family OUTLET name GEOM.104
+prescribed_point 123.0811 0.4622 52.206 family OUTLET name GEOM.105
+prescribed_point 123.0811 49.4622 52.206 family OUTLET name GEOM.106
+prescribed_point 123.0811 49.4622 -45.794 family OUTLET name GEOM.107
+prescribed_point 123.0811 0.4622 52.206 family GROUND name GEOM.108
+prescribed_point 123.0811 0.4622 -45.794 family GROUND name GEOM.109
+prescribed_point -149.8599 0.4622 -45.794 family GROUND name GEOM.110
+prescribed_point -149.8599 0.4622 52.206 family GROUND name GEOM.111
+prescribed_point 123.0811 0.4622 52.206 family WALL name GEOM.112
+prescribed_point 123.0811 49.4622 52.206 family WALL name GEOM.113
+prescribed_point -149.8599 49.4622 52.206 family WALL name GEOM.114
+prescribed_point -149.8599 0.4622 52.206 family WALL name GEOM.115
+prescribed_point 123.0811 0.4622 -45.794 family WALL name GEOM.116
+prescribed_point 123.0811 49.4622 -45.794 family WALL name GEOM.117
+prescribed_point -149.8599 49.4622 -45.794 family WALL name GEOM.118
+prescribed_point -149.8599 0.4622 -45.794 family WALL name GEOM.119
+prescribed_point 123.0811 49.4622 -45.794 family WALL name GEOM.120
+prescribed_point 123.0811 49.4622 52.206 family WALL name GEOM.121
+prescribed_point -149.8599 49.4622 52.206 family WALL name GEOM.122
+prescribed_point -149.8599 49.4622 -45.794 family WALL name GEOM.123
+prescribed_point -149.8599 49.4622 52.206 family INLET name GEOM.124
+prescribed_point -149.8599 0.4622 52.206 family INLET name GEOM.125
+prescribed_point -149.8599 0.4622 -45.794 family INLET name GEOM.126
+prescribed_point -149.8599 49.4622 -45.794 family INLET name GEOM.127
+prescribed_point -149.8599 49.4622 52.206 family INLET name GEOM.128
+prescribed_point -149.8599 0.4622 52.206 family INLET name GEOM.129
+prescribed_point -149.8599 0.4622 -45.794 family INLET name GEOM.130
+prescribed_point -149.8599 49.4622 -45.794 family INLET name GEOM.131
+define_curve family GEO tetra_size 1e+010 name crv.00 vertex1 GEOM.54 vertex2 GEOM.51
+bspline
+2,2,0
+0,0,1,1
+-149.8599,49.4622,-45.794
+-149.8599,49.4622,52.206
+define_curve family GEO tetra_size 1e+010 name crv.01 vertex1 GEOM.54 vertex2 GEOM.53
+bspline
+2,2,0
+0,0,1,1
+-149.8599,49.4622,-45.794
+-149.8599,0.4622,-45.794
+define_curve family GEO tetra_size 1e+010 name crv.02 vertex1 GEOM.51 vertex2 GEOM.52
+bspline
+2,2,0
+0,0,1,1
+-149.8599,49.4622,52.206
+-149.8599,0.4622,52.206
+define_curve family GEO tetra_size 1e+010 name crv.03 vertex1 GEOM.53 vertex2 GEOM.52
+bspline
+2,2,0
+0,0,1,1
+-149.8599,0.4622,-45.794
+-149.8599,0.4622,52.206
+define_curve family GEO tetra_size 1e+010 name crv.04 vertex1 GEOM.54 vertex2 GEOM.107
+bspline
+2,2,0
+0,0,1,1
+-149.8599,49.4622,-45.794
+123.0811,49.4622,-45.794
+define_curve family GEO tetra_size 1e+010 name crv.05 vertex1 GEOM.107 vertex2 GEOM.106
+bspline
+2,2,0
+0,0,1,1
+123.0811,49.4622,-45.794
+123.0811,49.4622,52.206
+define_curve family GEO tetra_size 1e+010 name crv.06 vertex1 GEOM.106 vertex2 GEOM.105
+bspline
+2,2,0
+0,0,1,1
+123.0811,49.4622,52.206
+123.0811,0.4622,52.206
+define_curve family GEO tetra_size 1e+010 name crv.07 vertex1 GEOM.107 vertex2 GEOM.104
+bspline
+2,2,0
+0,0,1,1
+123.0811,49.4622,-45.794
+123.0811,0.4622,-45.794
+define_curve family GEO tetra_size 1e+010 name crv.08 vertex1 GEOM.104 vertex2 GEOM.105
+bspline
+2,2,0
+0,0,1,1
+123.0811,0.4622,-45.794
+123.0811,0.4622,52.206
+define_curve family GEO tetra_size 1e+010 name crv.09 vertex1 GEOM.53 vertex2 GEOM.104
+bspline
+2,2,0
+0,0,1,1
+-149.8599,0.4622,-45.794
+123.0811,0.4622,-45.794
+define_curve family GEO tetra_size 1e+010 name crv.10 vertex1 GEOM.51 vertex2 GEOM.106
+bspline
+2,2,0
+0,0,1,1
+-149.8599,49.4622,52.206
+123.0811,49.4622,52.206
+define_curve family GEO tetra_size 1e+010 name crv.11 vertex1 GEOM.52 vertex2 GEOM.105
+bspline
+2,2,0
+0,0,1,1
+-149.8599,0.4622,52.206
+123.0811,0.4622,52.206
+define_surface name srf.08 family OUTLET tetra_size 5
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.08
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve - crv.06
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve - crv.05
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   crv.07
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+123.0811,0.4622,-45.794
+123.0811,0.4622,52.206
+123.0811,49.4622,-45.794
+123.0811,49.4622,52.206
+define_surface name srf.09 family GROUND tetra_size 5
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve - crv.08
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve - crv.09
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve   crv.03
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   crv.11
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+123.0811,0.4622,52.206
+123.0811,0.4622,-45.794
+-149.8599,0.4622,52.206
+-149.8599,0.4622,-45.794
+define_surface name srf.10 family WALL tetra_size 5
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve - crv.06
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve - crv.10
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve   crv.02
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   crv.11
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+123.0811,0.4622,52.206
+123.0811,49.4622,52.206
+-149.8599,0.4622,52.206
+-149.8599,49.4622,52.206
+define_surface name srf.11 family WALL tetra_size 5
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve - crv.07
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve - crv.04
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve   crv.01
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   crv.09
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+123.0811,0.4622,-45.794
+123.0811,49.4622,-45.794
+-149.8599,0.4622,-45.794
+-149.8599,49.4622,-45.794
+define_surface name srf.12 family WALL tetra_size 5
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.05
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve - crv.10
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve - crv.00
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   crv.04
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+123.0811,49.4622,-45.794
+123.0811,49.4622,52.206
+-149.8599,49.4622,-45.794
+-149.8599,49.4622,52.206
+define_surface name srf.13 family INLET tetra_size 5
+trim_surface n_loops 1
+loop n_curves 4
+coedge 3dcurve   crv.02
+polyline n_points 2
+0,0
+1,0
+coedge 3dcurve - crv.03
+polyline n_points 2
+1,0
+1,1
+coedge 3dcurve - crv.01
+polyline n_points 2
+1,1
+0,1
+coedge 3dcurve   crv.00
+polyline n_points 2
+0,1
+0,0
+bspline
+2,2,2,2,0
+0,0,1,1
+0,0,1,1
+-149.8599,49.4622,52.206
+-149.8599,0.4622,52.206
+-149.8599,49.4622,-45.794
+-149.8599,0.4622,-45.794
+affix 0
+define_model 1e+010 reference_size 1
+global_meshing_parameter triangle_quality "inscribed_area"
+global_meshing_parameter tgrid_max_cell_skew "0.90"
+global_meshing_parameter tgrid_max_cap_skew "0.98"
+global_meshing_parameter tgrid_smoothing_level "1"
+global_meshing_parameter tgrid_enhance_offset_comp "0"
+global_meshing_parameter tgrid_enhance_norm_comp "0"
+global_meshing_parameter tgrid_gap_factor "0.5"
+global_meshing_parameter tgrid_fix_first_layer "0"
+global_meshing_parameter tgrid_n_ortho_layers "0"
+global_meshing_parameter quadratic "0"
+global_meshing_parameter snorm "1"
+global_meshing_parameter shrinkwrap_projfactor "0.1"
+global_meshing_parameter shrinkwrap_nsmooth "5"
+global_meshing_parameter free_bunch "0"
+global_meshing_parameter mapped_method "1"
+global_meshing_parameter merge_surfs "1"
+global_meshing_parameter max_elements "0"
+global_meshing_parameter max_nodes "0"
+global_meshing_parameter min_angle "0.0"
+global_meshing_parameter max_length "0.0"
+global_meshing_parameter max_area "0.0"
+global_meshing_parameter smooth_dormant "0"
+global_meshing_parameter mesh_dormant "0"
+global_meshing_parameter impr_level "1"
+global_meshing_parameter try_harder "1"
+global_meshing_parameter ign_size "0.1"
+global_meshing_parameter surf_sizes "0"
+global_meshing_parameter proj_surf "1"
+global_meshing_parameter adjust_nodes_max "0.0"
+global_meshing_parameter block_mapping "0.2"
+global_meshing_parameter bound_smooth "0"
+global_meshing_parameter protect_line "0"
+global_meshing_parameter bunch_respect "0"
+global_meshing_parameter simple_offset "0"
+global_meshing_parameter mesh_method "1"
+global_meshing_parameter mesh_type "3"
+define_prism_meshing_parameters law 0 nlay 3 hratio 1.2 min_quality 0.01 fillet 0.1 tetra_smooth_limit 0.3
+return

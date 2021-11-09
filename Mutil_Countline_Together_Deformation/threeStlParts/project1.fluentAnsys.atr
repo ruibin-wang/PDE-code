@@ -1,0 +1,46 @@
+# Written by ICEM CFD 16.2, user Lenovo, Tue Aug 07 9:41:44 涓­鍥芥爣鍑嗘椂闂´ 2018
+
+begin family GEO
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family GEO
+
+begin family OUTLET
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family OUTLET
+
+begin family GROUND
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family GROUND
+
+begin family WALL
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family WALL
+
+begin family INLET
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family INLET
+
+begin family TRAINHEAD
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family TRAINHEAD
+
+begin family TRAINMIDDLE
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family TRAINMIDDLE
+
+begin family TRAINTAIL
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family TRAINTAIL
+
+begin family CREATED_MATERIAL_9
+    begin solver "ANSYS Fluent"
+    end solver "ANSYS Fluent"
+end family CREATED_MATERIAL_9

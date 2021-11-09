@@ -1,0 +1,545 @@
+# ICEM CFD Project Settings
+# Saved by Lenovo on Xujianxi on Tue Aug 07 9:41:46 �?国标准时�? 2018
+# ICEM CFD - version 16.2 - Release date: Jun 29 2015
+
+array set file_name {
+    catia_dir E:/PreGeneration0807/IcemGenerateMesh
+    parts_dir E:/PreGeneration0807/IcemGenerateMesh
+    domain_loaded 0
+    cart_file_loaded 0
+    cart_file {}
+    domain_saved project1.uns
+    archive {}
+    med_replay {}
+    topology_dir E:/PreGeneration0807/IcemGenerateMesh
+    ugparts_dir E:/PreGeneration0807/IcemGenerateMesh
+    icons {{$env(ICEM_ACN)/lib/ai_env/icons} {$env(ICEM_ACN)/lib/va/EZCAD/icons} {$env(ICEM_ACN)/lib/icons} {$env(ICEM_ACN)/lib/va/CABIN/icons}}
+    tetin project1.tin
+    family_boco project1.fluentAnsys.fbc
+    prism_params project1.prism_params
+    iges_dir E:/PreGeneration0807/IcemGenerateMesh
+    solver_params_loaded 0
+    attributes_loaded 0
+    project_lock {}
+    attributes project1.fluentAnsys.atr
+    domain project1.uns
+    domains_dir E:/PreGeneration0807/IcemGenerateMesh
+    settings_loaded 0
+    settings project1.prj
+    blocking {}
+    hexa_replay {}
+    transfer_dir E:/PreGeneration0807/IcemGenerateMesh
+    mesh_dir E:/PreGeneration0807/IcemGenerateMesh
+    family_topo {}
+    gemsparts_dir E:/PreGeneration0807/IcemGenerateMesh
+    family_boco_loaded 0
+    tetin_loaded 1
+    project_dir E:/PreGeneration0807/IcemGenerateMesh
+    topo_mulcad_out {}
+    solver_params {}
+}
+array set options {
+    expert 1
+    remote_path {}
+    tree_disp_quad 2
+    tree_disp_pyra 0
+    evaluate_diagnostic 0
+    histo_show_default 1
+    select_toggle_corners 0
+    remove_all 0
+    keep_existing_file_names 0
+    record_journal 0
+    edit_wait 0
+    face_mode all
+    select_mode all
+    med_save_emergency_tetin 1
+    user_name Lenovo
+    diag_which all
+    uns_warn_if_display 500000
+    bubble_delay 1000
+    external_num 1
+    tree_disp_tri 2
+    apply_all 0
+    default_solver {ANSYS Fluent}
+    temporary_directory {}
+    flood_select_angle 0
+    home_after_load 1
+    project_active 0
+    histo_color_by_quality_default 1
+    undo_logging 1
+    tree_disp_hexa 0
+    histo_solid_default 1
+    host_name Xujianxi
+    xhidden_full 1
+    editor {}
+    mouse_color orange
+    clear_undo 1
+    remote_acn {}
+    remote_sh csh
+    tree_disp_penta 0
+    n_processors 1
+    remote_host {}
+    save_to_new 0
+    quality_info Quality
+    tree_disp_node 0
+    med_save_emergency_mesh 1
+    redtext_color red
+    tree_disp_line 0
+    select_edge_mode 0
+    use_dlremote 0
+    max_mesh_map_size {}
+    show_tris 1
+    remote_user {}
+    icon_size Normal
+    enable_idle 0
+    auto_save_views 1
+    max_cad_map_size {}
+    display_origin 0
+    uns_warn_user_if_display 1000000
+    detail_info 0
+    win_java_help 0
+    show_factor 1
+    boundary_mode all
+    clean_up_tmp_files 1
+    auto_fix_uncovered_faces 1
+    med_save_emergency_blocking 1
+    max_binary_tetin 0
+    tree_disp_tetra 0
+}
+array set disp_options {
+    uns_dualmesh 0
+    uns_warn_if_display 500000
+    uns_normals_colored 0
+    uns_icons 0
+    uns_locked_elements 0
+    uns_shrink_npos 0
+    uns_node_type None
+    uns_icons_normals_vol 0
+    uns_bcfield 0
+    backup Wire
+    uns_nodes 0
+    uns_only_edges 0
+    uns_surf_bounds 0
+    uns_wide_lines 0
+    uns_vol_bounds 0
+    uns_displ_orient Triad
+    uns_orientation 0
+    uns_directions 0
+    uns_thickness 0
+    uns_shell_diagnostic 0
+    uns_normals 0
+    uns_couplings 0
+    uns_periodicity 0
+    uns_single_surfaces 0
+    uns_midside_nodes 1
+    uns_shrink 100
+    uns_multiple_surfaces 0
+    uns_no_inner 0
+    uns_enums 0
+    uns_disp Wire
+    uns_bcfield_name {}
+    uns_color_by_quality 0
+    uns_changes 0
+    uns_cut_delay_count 1000
+}
+set icon_size1 24
+set icon_size2 35
+set thickness_defined 0
+set solver_type 1
+set solver_setup 1
+array set prism_values {
+    n_triangle_smoothing_steps 5
+    min_smoothing_steps 6
+    first_layer_smoothing_steps 1
+    new_volume {}
+    height 0
+    prism_height_limit 0
+    interpolate_heights 0
+    n_tetra_smoothing_steps 10
+    do_checks {}
+    delete_standalone 1
+    ortho_weight 0.50
+    max_aspect_ratio {}
+    ratio_max {}
+    total_height 0
+    use_prism_v10 0
+    intermediate_write 1
+    delete_base_triangles {}
+    ratio_multiplier {}
+    refine_prism_boundary 1
+    max_size_ratio {}
+    triangle_quality inscribed_area
+    max_prism_angle 180
+    tetra_smooth_limit 0.30000001
+    max_jump_factor 5
+    use_existing_quad_layers 0
+    layers 3
+    fillet 0.1
+    into_orphan 0
+    init_dir_from_prev 0
+    blayer_2d 0
+    do_not_allow_sticking {}
+    top_family {}
+    law exponential
+    min_smoothing_val 0.1
+    auto_reduction 0
+    max_prism_height_ratio 0
+    stop_columns 1
+    stair_step 1
+    smoothing_steps 12
+    side_family {}
+    min_prism_quality 0.0099999998
+    ratio 1.2
+}
+set aie_current_flavor {}
+array set vid_options {
+    wb_import_mat_points 0
+    wb_NS_to_subset 0
+    wb_import_surface_bodies 1
+    wb_import_cad_att_pre {SDFEA;DDM}
+    wb_import_mix_res_line 0
+    wb_import_tritol 0.001
+    auxiliary 0
+    wb_import_cad_att_trans 1
+    wb_import_mix_res -1
+    wb_import_mix_res_surface 0
+    show_name 0
+    wb_import_solid_bodies 1
+    wb_import_delete_solids 0
+    wb_import_mix_res_solid 0
+    wb_import_save_pmdb {}
+    inherit 1
+    default_part GEOM
+    new_srf_topo 1
+    wb_import_associativity_model_name {}
+    DelPerFlag 0
+    wb_import_line_bodies 0
+    wb_import_save_partfile 0
+    composite_tolerance 1.0
+    wb_NS_to_entity_parts 0
+    wb_import_en_sym_proc 1
+    wb_import_sel_proc 1
+    wb_import_work_points 0
+    wb_import_reference_key 0
+    wb_import_mix_res_point 0
+    wb_import_pluginname {}
+    wb_NS_only 0
+    wb_import_create_solids 0
+    wb_import_refresh_pmdb 0
+    wb_import_sel_pre {}
+    wb_import_scale_geo 0
+    wb_import_load_pmdb {}
+    replace 0
+    wb_import_cad_associativity 0
+    same_pnt_tol 1e-4
+    tdv_axes 1
+    vid_mode 0
+    DelBlkPerFlag 0
+}
+array set map_tetin_sizes {
+    densities 1
+    msurfaces 1
+    ppoint 1
+    thincuts 1
+    tetin {}
+    psurfaces 1
+    mcurves 1
+    mpoint 1
+    doit 0
+    pcurves 1
+    global 1
+    subsets 1
+    family 1
+}
+array set import_model_options {
+    from_source 0
+    always_ref_key 0
+    always_convert 0
+    named_sel_only 0
+    always_import 0
+    convert_to Unitless
+}
+set savedTreeVisibility {geomNode 1 geom_subsetNode 2 geomPointNode 0 geomCurveNode 2 geomSurfNode 0 meshNode 1 mesh_subsetNode 2 meshPointNode 0 meshLineNode 0 meshShellNode 2 meshTriNode 2 meshVolumeNode 0 meshTetraNode 0 partNode 2 part-CREATED_MATERIAL_9 2 part-GEO 2 part-GROUND 2 part-INLET 2 part-OUTLET 2 part-TRAINHEAD 2 part-TRAINMIDDLE 2 part-TRAINTAIL 2 part-WALL 2}
+set last_view {rot {-0.141418126961 -0.180148164234 0.00909657080336 0.973378037911} scale {4.36052372831 4.36052372831 4.36052372831} center {-13.3895 24.9622 3.206} pos {0.0 0.0 0}}
+array set cut_info {
+    active 0
+}
+array set hex_option {
+    default_bunching_ratio 2.0
+    floating_grid 0
+    project_to_topo 0
+    n_tetra_smoothing_steps 20
+    sketching_mode 0
+    trfDeg 1
+    wr_hexa7 0
+    smooth_ogrid 0
+    find_worst 1-3
+    hexa_verbose_mode 0
+    old_eparams 0
+    uns_face_mesh_method uniform_quad
+    multigrid_level 0
+    uns_face_mesh one_tri
+    check_blck 0
+    proj_limit 0
+    check_inv 0
+    project_bspline 0
+    hexa_update_mode 1
+    default_bunching_law BiGeometric
+}
+array set saved_views {
+    views {}
+}
+
+#------------- DEZ Data ------------------
+
+namespace eval ::AIEnv::GUIManagement::DEZ {
+    array set mszGlobalDEZ_data {
+        this mszGlobalDEZ
+        type none
+        mszGlobalTypeGGVal 4
+        globalSF 1.0
+        dspScaleFlag 0
+        maxSz 0.0
+        dspSeedFlag 0
+        natSzGGVal 0
+        minSize 1
+        dspNatFlag 0
+        gapNum 1
+        gnatref 10
+        igwall 0
+        meshElemTypeList {
+       "All Tri"
+       "Quad w/one Tri"
+       "Quad Dominant"
+       "All Quad"
+    }
+        mesh_type2 {Quad Dominant}
+        __mszShellType_Last_Index 0
+        meshElemMethodList {Autoblock {Patch Dependent} {Patch Independent} Shrinkwrap}
+        mesh_method2 {Patch Dependent}
+        __mszShellMethod_Last_Index 0
+        mszShellAdvancedVal 1
+        ign_size 0.1
+        mappedMethodsList {
+        "Free"
+        "Some mapped"
+        "Mostly mapped"
+    }
+        mapped_method2 {Some mapped}
+        __mszShellMapped_Last_Index 0
+        merge_surfs 1
+        bunch_respect 0
+        quadratic 0
+        protect_line 0
+        bound_smooth 0
+        free_bunch 0
+        OffsetList {
+        "Standard"
+        "Simple"
+        "Forced simple"
+    }
+        simple_offset2 Standard
+        __mszShellSimpleOffset_Last_Index 0
+        block_mapping 0.2
+        adjust_nodes_max 0.0
+        proj_surf 1
+        surf_sizes 0
+        snorm 1
+        try_harder 1
+        impr_level 1
+        mesh_dormant 0
+        smooth_dormant 0
+        shrinkwrap_nsmooth 5
+        shrinkwrap_projfactor 0.1
+        mszGlobalVolumeTypeEGVal 0
+        mszGlobalTetTypeVal 0
+        tetra_batch 0
+        fastTranFlag 0
+        gedgec 0.2
+        tetra_smooth 1
+        tetra_smooth_niter 5
+        tetra_smooth_aspect 0.4
+        tetra_coarsen 0
+        tetra_coarsen_niter 2
+        tetra_coarsen_aspect 0.2
+        tetra_fix_nmanifold 1
+        tetra_close_gaps 0
+        tetra_fix_holes 1
+        tetra_use_active_lcs 0
+        tetra_run_adv_delaunay 1
+        tetra_tg_adv_delaunay_af 1
+        tetra_memory_scale 1
+        tetra_spacing_factor 1
+        tetra_fillholes 0
+        tetra_meshall 0
+        tetra_floodfill 0
+        tetra_verbose 0
+        tetra_smooth2 1
+        tetra_smooth_niter2 5
+        tetra_smooth_aspect2 0.4
+        tetra_expansion_factor 1.2
+        tetra_proximity_check 0
+        hybrid_remeshCenter 0
+        mszGlobalMeshCartEGVal 0
+        cart_proj_factor 0.98
+        cart_split_degen 0
+        cart_create_pyramids 0
+        cartRefType {"Uniform" "2-to-1" "3-to-1"}
+        cart_tratio Uniform
+        __meshCartTratio_Last_Index 0
+        cart_aspect_ratio {1 1 1}
+        cart_infproj 1
+        cart_user_bbox 0
+        cart_bbox {}
+        cart_csys 0
+        cart_fillholes 0
+        __meshCartHCTratio_Last_Index 0
+        GrowthLawList {linear exponential wb-exponential}
+        law exponential
+        __meshPrismLaw_Last_Index 0
+        height 0
+        ratio 1.2
+        layers 3
+        total_height 0
+        init_dir_from_prev 0
+        min_prism_quality 0.0099999998
+        fillet 0.1
+        max_prism_angle 180
+        max_aspect_ratio {}
+        prism_height_limit 0
+        ratio_multiplier {}
+        new_volume {}
+        side_family {}
+        top_family {}
+        into_orphan 0
+        n_triangle_smoothing_steps 5
+        TriQualityList {inscribed_area inscribed_ratio laplace height_over_base skewness min_angle max_angle}
+        triangle_quality inscribed_area
+        __meshPrismTriQuality1_Last_Index 0
+        ortho_weight 0.50
+        n_tetra_smoothing_steps 10
+        smoothing_steps 12
+        first_layer_smoothing_steps 1
+        tgrid_fix_first_layer 0
+        tgrid_n_ortho_layers 0
+        tgrid_gap_factor 0.5
+        tgrid_enhance_norm_comp 0
+        tgrid_enhance_offset_comp 0
+        TgridSmoothingLevelList {Low Medium High}
+        tgrid_smoothing_level Medium
+        __meshPrismPrTGridImprovePrismQuality_Last_Index 0
+        tgrid_max_cap_skew 0.98
+        tgrid_max_cell_skew 0.90
+        tgrid_last_layer_aspect {}
+        DefineperiodicGGVal 0
+        periodicTypeEGVal 0
+        periodicTypeRotMVal 0
+        base {0 0 0}
+        axis {0 0 0}
+        angle 0
+        num_sectors {}
+        VecList {}
+    }
+    array set meshPrismDEZ_data {
+        this meshPrismDEZ
+        type DEZ
+        n_triangle_smoothing_steps 5
+        triangle_quality {}
+        __meshPrismTriQuality_Last_Index 0
+        n_tetra_smoothing_steps 10
+        smoothing_steps 12
+        first_layer_smoothing_steps 1
+        loadmesh 0
+    }
+    array set meshAutoDEZ_data {
+        this meshAutoDEZ
+        type DEZ
+        meshAutoWhatVal 1
+        set_surfparams_type 0
+        surfElemTypeList {
+	    "All Tri"
+	    "Quad w/one Tri"
+	    "Quad Dominant"
+	    "All Quad"
+    }
+        etype2 {Quad Dominant}
+        __meshSurfType_Last_Index 0
+        set_surfparams_method 0
+        surfElemMethodList {Autoblock {Patch Dependent} {Patch Independent} Shrinkwrap}
+        emethod2 {Patch Dependent}
+        __meshSurfMethod_Last_Index 0
+        input 0
+        geomParts {}
+        geomEnts {}
+        volmesh_type 0
+        tetra_method 0
+        run_prism 0
+        run_hexacore 0
+        tetra_input 0
+        meshTetUseExistVal 0
+        useMeshParts {}
+        meshTetUseExist2Val 0
+        tetinFile {}
+        loadFlag 1
+        PartList {{From screen} GEO GROUND INLET OUTLET TRAINHEAD TRAINMIDDLE TRAINTAIL WALL inherited}
+        family CREATED_MATERIAL
+        __meshDelRemeshMF_Last_Index 0
+        loadmesh 1
+        enclosedParts {}
+        meshFile {}
+        __meshAdvRemeshMF_Last_Index 0
+        run_inflation 1
+        run_pre_or_post_inflation pre
+        run_tgrid_hexacore 0
+        run_tgrid_interactive 0
+        __meshTGridRemeshMF_Last_Index 0
+        run_tgrid_inflation 1
+        __meshHexaDomPart_Last_Index 0
+        cart_method 0
+        vol_fam {}
+        __meshCartBodyFit_Last_Index 0
+        grid_split 0
+        gridFile {}
+        kpt_tol {}
+        inf_method 0
+        prism_input 0
+    }
+    array set smoothDEZ_data {
+        this smoothDEZ
+        type DEZ
+        iters 5
+        quality 0.4
+        qualityDDList {
+	        "Quality"
+	        "Aspect ratio"
+	        "Custom quality"
+	        "Determinant"
+	        "Min angle"
+	        "Max orthogls"
+	        "Max warp"
+	        "Max warpgls"
+	        "Skew"
+	    }
+        qualitydde Quality
+        __chooseQualityDDE_Last_Index 0
+        smoothMethod 0
+        advLaplacGGVal 0
+        LaplacCriterion pure
+        advLaplacResSfGGVal 0
+        resSf 0.5
+        advLaplacResVlGGVal 0
+        resVl 0.05
+        AllElFlag 0
+        NoCollapseFlag 1
+        RefineFlag 0
+        HexGroupFlag 1
+        PrePointFlag 0
+        SFitFlag 0
+        prismWarpRatio 0.5
+        violateGGVal 0
+        violateTol 0.1
+        relative_tol 0
+        minEdgeGGVal 0
+        minEdgeLen 5
+    }
+}

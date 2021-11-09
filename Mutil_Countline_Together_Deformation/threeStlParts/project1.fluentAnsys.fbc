@@ -1,0 +1,12 @@
+# family_boco file written by ICEM CFD by Lenovo on Tue Aug 07 9:41:44 涓�?鍥芥爣鍑嗘��闂´ 2018
+## solver ANSYS Fluent
+"GEO"
+"OUTLET"
+"GROUND"
+"WALL"
+"INLET"
+"TRAINHEAD"
+"TRAINMIDDLE"
+"TRAINTAIL"
+"CREATED_MATERIAL_9"
+
