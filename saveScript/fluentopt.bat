@@ -1,0 +1,1 @@
+"C:\Program Files\ANSYS Inc\v162\fluent\ntbin\win64\fluent.exe" 3d  -t10 -i D:\Robin\PreGeneration0807\Script\fluentScript
